@@ -1,5 +1,5 @@
 {% set name = "fancylog" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fancylog-{{ version }}.tar.gz
-  sha256: 08edb5bbd69833962ec716df08518e80a02fa8db04ad8981c5705566875251e6
+  sha256: 8606698149ea676a56f6a2667a1e60f910fd39b4babec05a39e020862791e361
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
