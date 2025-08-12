@@ -1,13 +1,14 @@
+{% set python_min = "3.11" %}
 {% set name = "fancylog" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fancylog-{{ version }}.tar.gz
-  sha256: 08edb5bbd69833962ec716df08518e80a02fa8db04ad8981c5705566875251e6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fancylog-{{ version }}.tar.gz
+  sha256: 909c847c2fcc285817e62b364c7fd792a7133072bd83c97d516a931527cbaba3
 
 build:
   noarch: python
@@ -17,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools-scm
     - setuptools
   run:
     - packaging
-    - python >=3.6
+    - python >={{ python_min }}
     - rich
 
 test:
@@ -33,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/adamltyson/fancylog

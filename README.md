@@ -3,11 +3,11 @@ About fancylog-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fancylog-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/neuroinformatics-unit/fancylog
+Home: https://github.com/adamltyson/fancylog
 
 Package license: MIT
 
-Summary: Fancier logging with Python
+Summary: Fancier logging in Python
 
 Current build status
 ====================
