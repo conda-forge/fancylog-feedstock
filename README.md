@@ -190,5 +190,4 @@ Feedstock Maintainers
 
 * [@JoeZiminski](https://github.com/JoeZiminski/)
 * [@adamltyson](https://github.com/adamltyson/)
-* [@goanpeca](https://github.com/goanpeca/)
 
